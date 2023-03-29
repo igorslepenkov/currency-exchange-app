@@ -1,46 +1,117 @@
-# Getting Started with Create React App
+<div id="top"></div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<br />
+<div align="center">
+  <a href="https://github.com/igorslepenkov/currency-exchange-app">
+    <img src="public/android-chrome-192x192.png" alt="Logo" width="80" height="80">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">Currency Exchange App</h3>
 
-### `npm start`
+  <p align="center">Simple yet interesting app</p>
+</div>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+  </ol>
+</details>
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- ABOUT THE PROJECT -->
 
-### `npm test`
+## About The Project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Product screenshot][notes]
 
-### `npm run build`
+Hello, my name is Igor I am from Belarus and i am beginning full-stack developer. This project made by myself in a harry as a test project to apply for Frontend developer job
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here is the quick overview of my project's functionality:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+All it does is just rendering currencies' rates related to base currency, that is specified by user or by default and there is ability to pass text in format "amount -- base currency code -- in -- target currency code" to get result of convertion of one currency into another.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Here are some screenshots of deployed project you can always check deploy link and see it for yourself in more details
 
-### `npm run eject`
+![Product greeting screenshot][greeting]
+![Product home screenshot][home]
+![Product currencies screenshot][currencies]
+![Product converter screenshot][converter]
+![Product menu screenshot][menu]
+![Product adaptive greeting screenshot][adaptive_greet]
+![Product adaptive home screenshot][adaptive_home]
+![Product adaptive currencies screenshot][adaptive_1]
+![Product adaptive converter screenshot][adaptive_converter]
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Built With
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [![React][react.js]][react-url]
+- [![TS](https://badgen.net/badge/-/TypeScript/blue?icon=typescript&label)][typescript-link]
+- [Material UI](https://mui.com/)
+- [react-router-dom](https://github.com/remix-run/react-router)
+- [axios](https://axios-http.com/)
+- [styled-components](https://styled-components.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- GETTING STARTED -->
 
-## Learn More
+## Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+In order to use application locally you need Node and NPM installed on your machine. In all other cases just go to
+
+```
+https://courageous-marzipan-963fc7.netlify.app/
+```
+
+## Contact
+
+Igor Slepenkov - [My LinkedIn](https://www.linkedin.com/in/igor-slepenkov-b17704198)
+
+Project Link: [https://github.com/igorslepenkov/currency-exchange-app](https://github.com/igorslepenkov/currency-exchange-app)
+
+Deploy link: [https://lovely-youtiao-6cad08.netlify.app/](https://lovely-youtiao-6cad08.netlify.app/)
+
+[contributors-shield]: https://img.shields.io/github/contributors/igorslepenkov/bookstore.svg?style=for-the-badge
+[contributors-url]: https://github.com/igorslepenkov/bookstore/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/igorslepenkov/bookstore.svg?style=for-the-badge
+[forks-url]: https://github.com/igorslepenkov/bookstore/network/members
+[stars-shield]: https://img.shields.io/github/stars/igorslepenkov/bookstore.svg?style=for-the-badge
+[stars-url]: https://github.com/igorslepenkov/bookstore/stargazers
+[issues-shield]: https://img.shields.io/github/issues/igorslepenkov/bookstore.svg?style=for-the-badge
+[issues-url]: https://github.com/igorslepenkov/bookstore/issues
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/igor-slepenkov-b17704198
+[greeting]: "screenshots/greeting.png"
+[home]: "screenshots/greeting.png"
+[currencies]: "screenshots/currencies.png"
+[converter]: "screenshots/converter.png"
+[menu]: "screenshots/menu.png"
+[adaptive_greet]: "screenshots/adaptive_greet.png"
+[adaptive_home]: "screenshots/adaptive_home.png"
+[adaptive_1]: "screenshots/adaptive_1.png"
+[adaptive_converter]: "screenshots/adaptive_converter.png"
+[react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[react-url]: https://reactjs.org/
+[typescript-link]: https://www.typescriptlang.org/
