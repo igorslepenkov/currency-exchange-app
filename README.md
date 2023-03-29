@@ -59,7 +59,7 @@ Here are some screenshots of deployed project you can always check deploy link a
 ![Product menu screenshot][menu]
 ![Product adaptive greeting screenshot][adaptive_greet]
 ![Product adaptive home screenshot][adaptive_home]
-![Product adaptive currencies screenshot][adaptive_1]
+![Product adaptive currencies screenshot][adaptive1]
 ![Product adaptive converter screenshot][adaptive_converter]
 
 ### Built With
@@ -103,15 +103,15 @@ Deploy link: [https://lovely-youtiao-6cad08.netlify.app/](https://lovely-youtiao
 [issues-url]: https://github.com/igorslepenkov/bookstore/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/igor-slepenkov-b17704198
-[greeting]: "screenshots/greeting.png"
-[home]: "screenshots/greeting.png"
-[currencies]: "screenshots/currencies.png"
-[converter]: "screenshots/converter.png"
-[menu]: "screenshots/menu.png"
-[adaptive_greet]: "screenshots/adaptive_greet.png"
-[adaptive_home]: "screenshots/adaptive_home.png"
-[adaptive_1]: "screenshots/adaptive_1.png"
-[adaptive_converter]: "screenshots/adaptive_converter.png"
+[greeting]: screenshots/greeting.png
+[home]: screenshots/greeting.png
+[currencies]: screenshots/currencies.png
+[converter]: screenshots/converter.png
+[menu]: screenshots/menu.png
+[adaptive_greet]: screenshots/adaptive_greet.png
+[adaptive_home]: screenshots/adaptive_home.png
+[adaptive1]: screenshots/adaptive1.png
+[adaptive_converter]: screenshots/adaptive_converter.png
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
 [typescript-link]: https://www.typescriptlang.org/
