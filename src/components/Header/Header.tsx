@@ -32,7 +32,7 @@ export const Header = () => {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <Typography variant="h4" sx={{ my: 2 }}>
-        MUI
+        Exchange App
       </Typography>
       <Divider />
       <List>
