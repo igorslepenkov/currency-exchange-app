@@ -49,6 +49,9 @@ export const ConverterPage = () => {
   };
 
   useEffect(() => {
+    setConvertationError("");
+    setConvertResult(null);
+
     if (debouncedInputValue) {
       convertCurrencies(debouncedInputValue);
     }
@@ -63,6 +66,9 @@ export const ConverterPage = () => {
         <Typography variant="body1" color="error.light" mb="20px">
           Enter your request string in format "&#60;amount&#62; &#60;base
           currency code&#62; in &#60;target currency code&#62;"
+        </Typography>
+        <Typography variant="body1" color="error.light" mb="20px">
+          Example: Please show me how much is 20 eur in usd
         </Typography>
         <TextField
           type="text"
