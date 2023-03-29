@@ -12,12 +12,18 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import { ROUTE, RouteKey } from "../../router";
+import { useNavigate } from "react-router-dom";
+import { LinkWithoutStyles } from "../LinkWithoutStyles";
 
 const drawerWidth = 240;
-const navItems = ["Home", "Converter", "Currencies"];
 
 export const Header = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
+
+  const navigate = useNavigate();
+
+  const routeKeys = Object.keys(ROUTE) as unknown as RouteKey[];
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -30,11 +36,14 @@ export const Header = () => {
       </Typography>
       <Divider />
       <List>
-        {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: "center" }}>
+        {routeKeys.map((key) => (
+          <ListItem key={key} disablePadding>
+            <ListItemButton
+              sx={{ textAlign: "center" }}
+              onClick={() => navigate(ROUTE[key])}
+            >
               <ListItemText
-                primary={item}
+                primary={key}
                 primaryTypographyProps={{ variant: "h5" }}
               />
             </ListItemButton>
@@ -69,9 +78,11 @@ export const Header = () => {
             <Typography variant="h5">EXHANGE APP</Typography>
           </Typography>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            {navItems.map((item) => (
-              <Button key={item} sx={{ color: "#fff" }}>
-                <Typography variant="h6">{item}</Typography>
+            {routeKeys.map((key) => (
+              <Button key={key} sx={{ color: "#fff" }}>
+                <Typography variant="h6">
+                  <LinkWithoutStyles to={ROUTE[key]}>{key}</LinkWithoutStyles>{" "}
+                </Typography>
               </Button>
             ))}
           </Box>

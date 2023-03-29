@@ -7,6 +7,8 @@ import {
   ButtonGroup,
 } from "@mui/material";
 import { SxProps } from "@mui/system";
+import { useNavigate } from "react-router-dom";
+import { ROUTE, RouteKey } from "../../router";
 
 export const HomePage = () => {
   const pageStyles: SxProps = {
@@ -104,7 +106,7 @@ export const HomePage = () => {
     borderRadius: "20px",
     opacity: 0,
     animationName: "appear",
-    animationDelay: "6s",
+    animationDelay: "6.5s",
     animationDuration: "2s",
     animationFillMode: "forwards",
     animationTimingFunction: "ease-in-out",
@@ -116,8 +118,10 @@ export const HomePage = () => {
     },
   });
 
+  const navigate = useNavigate();
+
   return (
-    <Box sx={pageStyles}>
+    <Box sx={pageStyles} component="main">
       <Typography variant="h2" color="secondary" sx={greetingTextStyles}>
         Welcome to Exchage App!
       </Typography>
@@ -133,10 +137,20 @@ export const HomePage = () => {
           Choose page:
         </Typography>
         <ButtonGroup variant="contained" size="large" fullWidth>
-          <Button color="secondary" sx={{ flexGrow: 1 }}>
-            Exchange
+          <Button
+            color="secondary"
+            sx={{ flexGrow: 1 }}
+            type="button"
+            onClick={() => navigate(ROUTE[RouteKey.Converter])}
+          >
+            Converter
           </Button>
-          <Button color="secondary" sx={{ flexGrow: 1 }}>
+          <Button
+            color="secondary"
+            sx={{ flexGrow: 1 }}
+            type="button"
+            onClick={() => navigate(ROUTE[RouteKey.Currencies])}
+          >
             List of Currencies
           </Button>
         </ButtonGroup>
