@@ -1,5 +1,6 @@
 import axios from "axios";
 import { Currency, IGetCurrenciesResult } from "../types";
+import { IParseRequestStringResult } from "../utils";
 
 enum CurrenciesAPIEndpoint {
   Latest = "latest",
@@ -31,9 +32,28 @@ class ExchangeRatesService {
   ): Promise<Currency[]> {
     const { data } = await this.API.get<IGetCurrenciesResult>(
       CurrenciesAPIEndpoint.Latest,
-      { params }
+      { params: { ...params, places: 4 } }
     );
     return Object.entries(data.rates);
+  }
+
+  public async convert({
+    baseCurrency,
+    targetCurrency,
+    amount,
+  }: IParseRequestStringResult): Promise<number> {
+    const { data } = await this.API.get<IGetCurrenciesResult>(
+      CurrenciesAPIEndpoint.Latest,
+      {
+        params: {
+          base: baseCurrency.toUpperCase(),
+          symbols: targetCurrency.toUpperCase(),
+          amount,
+          places: 4,
+        },
+      }
+    );
+    return data.rates[targetCurrency.toUpperCase()];
   }
 }
 

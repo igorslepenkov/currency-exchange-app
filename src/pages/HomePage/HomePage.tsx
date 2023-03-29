@@ -69,6 +69,7 @@ export const HomePage = () => {
     animationDelay: "0s, 3s",
     animationFillMode: "forwards, forwards",
     animationTimingFunction: "ease-in-out, ease-in-out",
+    textAlign: "center",
   };
 
   const panelStyles: SxProps<Theme> = (theme) => ({

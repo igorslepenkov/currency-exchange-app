@@ -1,20 +1,13 @@
 import { useCallback, useEffect, useState } from "react";
-import { Box, SelectChangeEvent, SxProps, Typography } from "@mui/material";
+import { Box, SelectChangeEvent, Typography } from "@mui/material";
 
 import { exchangeRatesService } from "../../services";
 import { Currency } from "../../types";
 import { CurrenciesTable } from "../../components";
 import { hoursInMs } from "../../utils";
+import { pageStyles } from "../../ui";
 
 export const CurrenciesPage = () => {
-  const pageStyles: SxProps = {
-    flexGrow: 1,
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  };
-
   const [baseCurrency, setBaseCurrency] = useState<string>("USD");
   const [currencies, setCurrencies] = useState<Currency[]>([]);
 
